@@ -5,8 +5,8 @@ function calculateAdjustment(salary) {
 }
 
 function adjustSalary(data) {
-  const newData = { ...data };
-  data.salary += calculateAdjustment(data.salary);
+  const newData = data
+  newData.salary += calculateAdjustment(newData.salary);
   return newData;
 }
 
