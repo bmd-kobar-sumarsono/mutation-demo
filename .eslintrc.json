@@ -1,10 +1,11 @@
 {
   "plugins": ["functional"],
   "rules": {
-    "functional/immutable-data": "error"
+    "functional/immutable-data": "warn"
   },
   "parserOptions": {
-    "ecmaVersion": 2017
+    "ecmaVersion": 11,
+    "sourceType": "module"
   },
   "env": {
     "es6": true

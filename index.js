@@ -1,5 +1,11 @@
-const unapprovedYearlyAdjustment = require("./yearly.js");
-const performanceBonus = require("./performance.js");
+import { adjustment } from "./yearly.js";
+import { bonus } from "./performance.js";
 
-console.log(unapprovedYearlyAdjustment);
+const adjustmentSalary = adjustment.salary;
+const performanceBonus = bonus;
+
+console.log({ adjustmentSalary });
 console.log({ performanceBonus });
+
+const newSalary = adjustmentSalary + performanceBonus;
+console.log(newSalary);

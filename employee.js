@@ -1,6 +1,4 @@
-const employee = {
+export const employee = {
   name: "Bambang",
   salary: 100000000,
 };
-
-module.exports = employee;

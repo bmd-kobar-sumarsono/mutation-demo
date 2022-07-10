@@ -1,11 +1,13 @@
-const employee = require("./employee.js");
+import { employee } from "./employee.js";
 
-function adjustSalary(data) {
-  const employeeData = data;
-  employeeData.salary += employeeData.salary * 0.5;
-  return employeeData;
+function calculateAdjustment(salary) {
+  return salary * 0.5;
 }
 
-const adjustment = adjustSalary(employee);
+function adjustSalary(data) {
+  const newData = { ...data };
+  data.salary += calculateAdjustment(data.salary);
+  return newData;
+}
 
-module.exports = adjustment;
+export const adjustment = adjustSalary(employee);
