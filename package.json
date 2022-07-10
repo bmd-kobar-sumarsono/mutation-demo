@@ -1,0 +1,13 @@
+{
+  "name": "immutability",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx eslint . && node index.js"
+  },
+  "dependencies": {
+    "eslint": "^8.19.0",
+    "eslint-plugin-functional": "^4.2.1"
+  }
+}
